@@ -1,4 +1,4 @@
-<p style"color: #000FF;">##FUNÇÕES</p> 
+# Funções <h1>
 
 
 -Responsável pelo design:<br>
