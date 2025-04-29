@@ -6,7 +6,7 @@ Na Python Shoes, você encontra os melhores tênis para todas as ocasiões. Comb
 
 ## **Integrantes** <h2>
 
-Nome | RA | Função | GitHub 
--------------------------- | --------- | -------------------- | 
-Guilherme da Silva Almeida | 425103423 | Desenvolvidor GitHub | 
+Nome                       | RA        |               Função | GitHub 
+-------------------------- | --------- | -------------------- | ------
+Guilherme da Silva Almeida | 425103423 | Desenvolvidor GitHub | hahah
 
