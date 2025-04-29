@@ -22,7 +22,7 @@ Samuel Sousa David                 | 425101258 | por enquanto nn sei  | hahah
 
 A estrutura de organização escolhida para a estrutara da pasta foi baseada integralmente na sugestão previamente apresentada e recomendada pelo professor, visando garantir clareza, coerência e alinhamento com os critérios estabelecidos para o projeto.
 
-Status : Desenvolvimento ⚠️
+> Status : Desenvolvimento ⚠️
 
 
 
