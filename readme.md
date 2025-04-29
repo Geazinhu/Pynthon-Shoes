@@ -1,9 +1,12 @@
-#### **Funções** <h4>
+# **Python Shoes** 👟 <h1>
+
+Na Python Shoes, você encontra os melhores tênis para todas as ocasiões. Combinando design moderno, tecnologia e qualidade, nossos modelos oferecem o equilíbrio perfeito entre performance e estilo. Descubra nossas coleções exclusivas e leve seus passos para o próximo nível.
 
 
-* Responsável pelo design:<br>
-* Responsável pelo desenvolvimento:<br>
-* Responsável pelo repositorio e Git Hub:<br>
-* Responsável em gravar o vídeo de como o site foi criado:<br>
-* Responsável pela apresentação do projeto:<br>
-* Responsável por enviar as quinta feiras os esboços para o professor: <br>
+
+## **Integrantes** <h2>
+
+Nome | RA | Função | GitHub 
+---- | --
+Guilherme da Silva Almeida | 425103423 | Desenvolvidor GitHub | 
+
