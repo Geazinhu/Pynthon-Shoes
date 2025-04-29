@@ -10,11 +10,11 @@ Nome                               | RA        | Função                       
 :--------------------------------  | :-------: | :---------------------------------------- | ------
 Gabriel de Souza Custódio Pereira  | 424205004 | Responsabel por gravar o vídeo            | hahah
 Geovana Letícia Vasconcelos Santos | 425106176 | por enquanto nn sei                       | hahah
-Guilherme da Silva Almeida         | 425103423 | Responsavel pelo GitHub                   | hahah
+Guilherme da Silva Almeida         | 425103423 | Responsavel pelo GitHub                   | <https://github.com/Geazinhu>
 João Gabriel Campos Ferreira       | 425106302 | Responsabel por gravar o vídeo            | hahah
 João Vitor Vieira de Andrade       | 425104874 | Responsavel pelo design                   | hahah
 José Lucas dos Santos Eustáquio    | 425102057 | Responsavel pelo design                   | hahah
-julia lima monteiro                | 425106386 | Responsabel por gravar o vídeo            | hahah
+julia lima monteiro                | 425106386 | Responsabel por gravar o vídeo            | <https://github.com/jujuti>
 Raissa Vitória Melo Correia        | 425103333 | Responsavel pelo desenvolvimento do site  | hahah
 Samuel Sousa David                 | 425101258 | Responsavel pelo GitHub                   | hahah 
 
