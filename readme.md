@@ -1,6 +1,12 @@
 # **Python Shoes** 👟 <h1>
 
-Na Python Shoes, você encontra os melhores tênis para todas as ocasiões. Combinando design moderno, tecnologia e qualidade, nossos modelos oferecem o equilíbrio perfeito entre performance e estilo. Descubra nossas coleções exclusivas e leve seus passos para o próximo nível.
+Somos uma loja 100% digital, feita pra quem gosta de praticidade, agilidade e calçados importados E claro: com um atendimento que te trata como deve ser — com atenção, respeito e agilidade.
+( x ) **Missão** 🎯: Nossa missão é trazer modelos que combinam design atual, qualidade de verdade e um precinho que cabe no seu bolso. Aqui, cada par é escolhido com cuidado e pensado para acompanhar você em todos os momentos — do corre do dia a dia até aquele rolê especial.
+( x ) **Visão** 🌎: A Python Shoes nasceu com um propósito simples: fazer você andar por aí com estilo, conforto e atitude. Somos apaixonados por calçados e por tudo que eles representam — liberdade, personalidade, movimento.
+( x ) **Valores** 🔑: Na Python Shoes, o estilo começa pelos pés. E o próximo passo é seu.
+
+
+
 
 
 
