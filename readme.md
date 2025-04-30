@@ -3,7 +3,7 @@
 Somos uma loja 100% digital, feita pra quem gosta de praticidade, agilidade e calçados importados E claro: com um atendimento que te trata como deve ser — com atenção, respeito e agilidade.<br>
 (x) **Missão** 🎯: Nossa missão é trazer modelos que combinam design atual, qualidade de verdade e um precinho que cabe no seu bolso. Aqui, cada par é escolhido com cuidado e pensado para acompanhar você em todos os momentos — do corre do dia a dia até aquele rolê especial.<br>
 (x) **Visão** 🌎: A Python Shoes nasceu com um propósito simples: fazer você andar por aí com estilo, conforto e atitude. Somos apaixonados por calçados e por tudo que eles representam — liberdade, personalidade, movimento.<br>
-[x] **Valores** 🔑: Na Python Shoes, o estilo começa pelos pés. E o próximo passo é seu.<br>
+(x) **Valores** 🔑: Na Python Shoes, o estilo começa pelos pés. E o próximo passo é seu.<br>
 
 
 
