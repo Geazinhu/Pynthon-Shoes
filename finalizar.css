@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0e9ff;
+    padding: 30px;
+    margin: 0;
+}
+  
+  .container-finalizar {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #fff20080;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    color: #ffd700;
+    text-shadow: 0 0 10px #fff200aa;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff33;
+  }
+  
+  .pagamentos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn-pagamento {
+    background: #ffd700;
+    color: #4a00e0;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .btn-pagamento:hover {
+    background: #fff200;
+    box-shadow: 0 0 15px #fff200aa;
+  }
+  
+  .btn-voltar {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn-voltar:hover {
+    background: #ffd700;
+    color: #4a00e0;
+    box-shadow: 0 0 15px #fff200;
+  }
