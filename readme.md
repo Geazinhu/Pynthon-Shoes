@@ -20,8 +20,8 @@ João Gabriel Campos Ferreira       | 425106302 | Responsavel por gravar o víde
 João Vitor Vieira de Andrade       | 425104874 | Responsavel pelo design                        | <https://github.com/Jooaozinho5>
 José Lucas dos Santos Eustáquio    | 425102057 | Responsavel pelo design                        | <https://github.com/lucs-mochi>
 Julia Lima Monteiro                | 425106386 | Responsavel por gravar o vídeo e apresentação  | <https://github.com/jujuti>
-Raissa Vitória Melo Correia        | 425103333 | Responsavel pelo relatorio escrito do projeto  | hahah
-Samuel Sousa David                 | 425101258 | Responsavel pelo GitHub                        | hahah 
+Raissa Vitória Melo Correia        | 425103333 | Responsavel pelo relatorio escrito do projeto  | <https://github.com/raissa1509>
+Samuel Sousa David                 | 425101258 | Responsavel pelo GitHub                        | <https://github.com/SamuelSD100>
 
 ## **Estrutura de pastas** 📁<h2>
 
