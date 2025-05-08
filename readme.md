@@ -25,4 +25,4 @@ Samuel Sousa David                 | 425101258 | Responsavel pelo GitHub        
 
 ## **Estrutura de pastas** 📁<h2>
 
-A estrutura de organização escolhida para a estrutara da pasta foi baseada integralmente na sugestão previamente apresentada e recomendada pelo professor, visando garantir clareza, coerência e alinhamento com os critérios estabelecidos para o projeto.
+A estrutura de organização escolhida para a estrutara da pasta foi baseada integralmente na sugestão previamente apresentada e recomendada pelo professor, visando garantir clareza, coerência e alinhamento com os critérios estabelecidos para o projeto. teste
