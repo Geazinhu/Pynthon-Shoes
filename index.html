@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PythonShoes</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <canvas id="lightningCanvas"></canvas>
+  <main class="Login-box">
+  <div class="Login">
+    <a href="indexlog.html">Login</a>
+  </div>
+</main>
+  <header>
+    <div class="hero-elegante">
+      <h1><span>PYTHON SHOES</span></h1>
+      <nav>
+        <div class="menu-links">
+          <a href="calçados.html">Calçados</a>
+          <a href="acessórios.html">Acessórios</a>
+          <a href="sobrenós.html">Sobre Nós</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="center">
+    <img class="logo-principal" src="./img/nike neon.png" alt="Logo Python Shoes">
+    <h2>ONDE O ESTILO SE CONECTA A TECNOLOGIA</h2>
+  </main>
+
+  <script>
+    const canvas = document.getElementById('lightningCanvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    function drawLightning(x, y, segments = 10, spread = 50) {
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+
+      for (let i = 0; i < segments; i++) {
+        x += Math.random() * spread - spread / 2;
+        y += Math.random() * 40;
+        ctx.lineTo(x, y);
+      }
+
+      ctx.strokeStyle = 'rgba(200, 0, 255, 0.8)';
+      ctx.lineWidth = 2;
+      ctx.shadowBlur = 15;
+      ctx.shadowColor = '#d100ff';
+      ctx.stroke();
+    }
+
+    function flashLightning() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const flashes = Math.floor(Math.random() * 3) + 1;
+      for (let i = 0; i < flashes; i++) {
+        const startX = Math.random() * canvas.width;
+        const startY = 0;
+        drawLightning(startX, startY);
+      }
+    }
+
+    setInterval(() => {
+      flashLightning();
+    }, 600 + Math.random() * 1000);
+  </script>
+</body>
+</html>

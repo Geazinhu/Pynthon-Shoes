@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finalizar Compra | PythonShoes</title>
+  <style>
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 10px #ffd700aa; }
+      50% { transform: scale(1.05); box-shadow: 0 0 25px #fff200; }
+      100% { transform: scale(1); box-shadow: 0 0 10px #ffd700aa; }
+    }
+
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #8e2de2, #4a00e0);
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #ffd700, 0 0 25px #fff200;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 0 15px #fff20044;
+    }
+
+    li {
+      padding: 15px;
+      font-size: 1.2em;
+      border-bottom: 1px solid #ffffff33;
+    }
+
+    .total {
+      font-size: 1.8em;
+      margin-top: 30px;
+      text-shadow: 0 0 10px #ffd700;
+    }
+
+    .pagamento {
+      margin-top: 40px;
+    }
+
+    .pagamento h2 {
+      font-size: 1.6em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    .pagamento-opcoes {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .opcao {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px 25px;
+      border-radius: 15px;
+      width: 150px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #ffffff33;
+    }
+
+    .opcao:hover {
+      background-color: #ffd70033;
+      box-shadow: 0 0 15px #fff200aa;
+      transform: scale(1.05);
+    }
+
+    .opcao span {
+      display: block;
+      font-size: 1.1em;
+      margin-top: 10px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .opcao.selecionado {
+      animation: pulse 0.6s ease-in-out;
+      border: 2px solid #fff200;
+    }
+
+    .btn-voltar {
+      margin-top: 50px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #ffd700;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #ffd700aa, 0 0 20px #fff20099;
+    }
+
+    .btn-voltar:hover {
+      background: #fff200;
+      box-shadow: 0 0 15px #fff200cc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Resumo do Carrinho</h1>
+
+  <ul id="lista-produtos"></ul>
+
+  <div class="total">
+    Total: R$ <span id="valor-total">0,00</span>
+  </div>
+
+  <section class="pagamento">
+    <h2>Escolha a forma de pagamento</h2>
+    <div class="pagamento-opcoes">
+      <div class="opcao" onclick="selecionarPagamento('Cartão')">💳<span>Cartão</span></div>
+      <div class="opcao" onclick="selecionarPagamento('Pix')">📱<span>Pix</span></div>
+      <div class="opcao" onclick="selecionarPagamento('Boleto')">💵<span>Boleto</span></div>
+    </div>
+  </section>
+
+  <button class="btn-voltar" onclick="voltar()">Voltar à Página Principal</button>
+
+  <audio id="som-click" src="https://cdn.pixabay.com/audio/2022/08/04/audio_46a0b72861.mp3"></audio>
+
+  <script>
+    function voltar() {
+      window.location.href = "index.html";
+    }
+
+    const nomes = JSON.parse(localStorage.getItem('nomesProdutos')) || [];
+    const total = localStorage.getItem('totalCarrinho') || 0;
+
+    const lista = document.getElementById("lista-produtos");
+    nomes.forEach(nome => {
+      const li = document.createElement("li");
+      li.textContent = nome;
+      lista.appendChild(li);
+    });
+
+    document.getElementById("valor-total").textContent = parseFloat(total).toFixed(2).replace(".", ",");
+
+    function selecionarPagamento(metodo) {
+      const audio = document.getElementById("som-click");
+      audio.currentTime = 0;
+      audio.play();
+
+      document.querySelectorAll('.opcao').forEach(op => {
+        op.classList.remove('selecionado');
+      });
+
+      event.currentTarget.classList.add('selecionado');
+
+      setTimeout(() => {
+        alert('✅ Pagamento com ${metodo} confirmado!\nSeu pedido será processado em breve.');
+      }, 400);
+    }
+  </script>
+</body>
+</html>

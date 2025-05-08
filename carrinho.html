@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Finalizar Compra | PythonShoes</title>
+  <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+  <div class="container">
+
+  </div>
+
+  <a href="index.html" class="btn-voltar">Voltar para a Página Inicial</a>
+  <a href="calçados.html" class="btn-voltar">Voltar para Produtos</a>
+  </div>
+  
+    <h1>Finalizar Compra</h1>
+
+    <ul id="lista-produtos"></ul>
+
+    <h2>Total: <span id="valor-total">R$ 0,00</span></h2>
+
+    <div class="pagamento">
+      <h3>Escolha a forma de pagamento:</h3>
+      <label><input type="radio" name="pagamento" value="pix" checked> Pix</label>
+      <label><input type="radio" name="pagamento" value="cartao"> Cartão</label>
+      <label><input type="radio" name="pagamento" value="boleto"> Boleto</label>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <button class="botao-confirmar" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <script>
+    function finalizarCompra() {
+      const pagamentoSelecionado = document.querySelector('input[name="pagamento"]:checked').value;
+      const total = document.getElementById("valor-total").textContent;
+
+      alert('✅ Compra finalizada com sucesso via ${pagamentoSelecionado.toUpperCase()}!\nTotal: ${total}');
+
+      localStorage.removeItem("carrinho");
+      document.getElementById("lista-produtos").innerHTML = "";
+      document.getElementById("valor-total").textContent = "R$ 0,00";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const lista = document.getElementById("lista-produtos");
+      const totalSpan = document.getElementById("valor-total");
+
+      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+      let total = 0;
+
+      carrinho.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2).replace('.', ',')}`;
+        lista.appendChild(li);
+        total += item.preco;
+      });
+
+      totalSpan.textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo | PythonShoes</title>
+  <link rel="stylesheet" href="calcados.css">
+
+</head>
+<body>
+
+</div>
+
+<a href="index.html" class="btn-voltar">Voltar para a Página Inicial</a>
+</div>
+
+
+  <!-- Carrinho como link para página de finalização -->
+  <a href="finalizar.html" class="carrinho-fake">
+    <img src="./img/carrinho-fake.png" alt="Carrinho">
+    <span class="contador-carrinho">0</span>
+  </a>
+
+  <h1>Escolha seus produtos</h1>
+
+  <section class="produtos-container">
+    <div class="produto-card">
+      <img src="./img/airmax tn.webp" alt="Air Max TN Plus Deadpool" />
+      <h2>Air Max TN Plus Deadpool</h2>
+      <p class="preco">R$1.499,00</p>
+      <p class="parcelamento">5x de R$299,80 sem juros</p>
+      <button class="btn-comprar" onclick="adicionarAoCarrinho('Air Max TN Plus Deadpool', 1499.00)">Comprar</button>
+      
+    </div>
+
+    <div class="produto-card">
+      <img src="./img/airmax tn plus hyper blue.webp" alt="Air Max TN Plus Hyper Blue" />
+      <h2>Air Max TN Plus Hyper Blue</h2>
+      <p class="preco">R$1.299,00</p>
+      <p class="parcelamento">6x de R$216,50 sem juros</p>
+      <button class="btn-comprar" onclick="adicionarAoCarrinho('Air Max TN Plus Hyper Blue', 1299.00)">Comprar</button>
+    </div>
+
+    <div class="produto-card">
+      <img src="./img/airmax tn reverse sunset.webp" alt="Air Max TN Plus Reverse Sunset" />
+      <h2>Air Max TN Plus Reverse Sunset</h2>
+      <p class="preco">R$1.599,00</p>
+      <p class="parcelamento">6x de R$266,50 sem juros</p>
+      <button class="btn-comprar" onclick="adicionarAoCarrinho('Air Max TN Plus Reverse Sunset', 1599.00)">Comprar</button>
+    </div>
+
+    <div class="produto-card">
+      <img src="./img/airnax tn paticle blue.webp" alt="Air Max TN Plus Particle Blue" />
+      <h2>Air Max TN Plus Particle Blue</h2>
+      <p class="preco">R$1.599,00</p>
+      <p class="parcelamento">6x de R$266,50 sem juros</p>
+      <button class="btn-comprar" onclick="adicionarAoCarrinho('Air Max TN Plus Particle Blue', 1599.00)">Comprar</button>
+    </div>
+  </section>
+
+  <script>
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+    function adicionarAoCarrinho(nome, preco) {
+      carrinho.push({ nome, preco });
+      localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+      document.querySelector('.contador-carrinho').textContent = carrinho.length;
+      alert('✅ "${nome}" adicionado ao carrinho!');
+    }
+
+    // Atualiza o contador ao carregar a página
+    window.addEventListener('DOMContentLoaded', () => {
+      const carrinhoSalvo = JSON.parse(localStorage.getItem('carrinho')) || [];
+      document.querySelector('.contador-carrinho').textContent = carrinhoSalvo.length;
+    });
+  </script>
+
+</body>
+</html>
