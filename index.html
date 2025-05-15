@@ -7,12 +7,25 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <canvas id="lightningCanvas"></canvas>
+  
+<canvas id="lightningCanvas"></canvas>
+
+
+
   <main class="Login-box">
+
   <div class="Login">
     <a href="indexlog.html">Login</a>
   </div>
+
 </main>
+
+   <!-- Carrinho como link para página de finalização -->
+   <a href="finalizar.html" class="carrinho-fake">
+    <img src="./img/carrinho-fake.png" alt="Carrinho">
+    <span class="contador-carrinho">0</span>
+  </a>
+
   <header>
     <div class="hero-elegante">
       <h1><span>PYTHON SHOES</span></h1>
@@ -20,6 +33,7 @@
         <div class="menu-links">
           <a href="calçados.html">Calçados</a>
           <a href="acessórios.html">Acessórios</a>
+          <a href="conjunto.html">Conjuntos</a>
           <a href="sobrenós.html">Sobre Nós</a>
         </div>
       </nav>
@@ -73,6 +87,25 @@
     setInterval(() => {
       flashLightning();
     }, 600 + Math.random() * 1000);
+  
   </script>
+  <script>
+  let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+  function adicionarAoCarrinho(nome, preco) {
+    carrinho.push({ nome, preco });
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+    document.querySelector('.contador-carrinho').textContent = carrinho.length;
+    alert(`✅ "${nome}" adicionado ao carrinho!`);
+  }
+
+  // Atualiza o contador ao carregar a página
+  window.addEventListener('DOMContentLoaded', () => {
+    const carrinhoSalvo = JSON.parse(localStorage.getItem('carrinho')) || [];
+    document.querySelector('.contador-carrinho').textContent = carrinhoSalvo.length;
+  });
+  </script>
+  
 </body>
 </html>
