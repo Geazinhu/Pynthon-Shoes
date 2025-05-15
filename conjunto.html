@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conjunto</title>
+    <link rel="stylesheet" href="conjuntos.css">
+</head>
+<body>
+    <a href="index.html" class="btn-voltar">⬅ Voltar para a Página Principal</a>
+</body>
+
+   <!-- Carrinho como link para página de finalização -->
+   <a href="finalizar.html" class="carrinho-fake">
+    <img src="./img/carrinho-fake.png" alt="Carrinho">
+    <span class="contador-carrinho">0</span>
+  </a>
+
+  <h1>Escolha os seus conjuntos</h1>
+  <section class="produtos-container">
+   
+
+      <div class="produto-card">
+        <img src="./img/conjunto4.jpg" alt="Conjunto Branco e Cinza" />
+        <h2>Conjunto Track Suit Branco e Cinza Nike</h2>
+        <p class="preco">R$800,00</p>
+        <p class="parcelamento">5x de R$200,00 sem juros</p>
+        <button class="btn-comprar" onclick="adicionarAoCarrinho('Conjunto Branco e Cinza', 800.00)">Comprar</button>
+      </div>
+
+      <div class="produto-card">
+        <img src="./img/conjunto1.jpg" alt="Conjunto Nike Preto" />
+        <h2>Conjunto Track Suit All Black Nike </h2>
+        <p class="preco">R$700,00</p>
+        <p class="parcelamento">5x de R$ 140,00 sem juros</p>
+        <button class="btn-comprar" onclick="adicionarAoCarrinho('Conjunto Nike Preto', 700.00)">Comprar</button>
+        </div>
+  
+
+     
+
+      <div class="produto-card">
+        <img src="./img/conjunto3.jpg" alt="Conjunto Branco" />
+        <h2>Conjunto Track Suit Branco Nike</h2>
+        <p class="preco">R$500,00</p>
+        <p class="parcelamento">5x de R$100,00 sem juros</p>
+        <button class="btn-comprar" onclick="adicionarAoCarrinho('Conjunto Branco', 500.00)">Comprar</button>
+      </div>
+
+      <div class="produto-card">
+        <img src="./img/conjunto2.jpg" alt="Conjunto Nike Cinza" />
+        <h2>Conjunto Track Suit Preto e Cinza Nike</h2>
+        <p class="preco">R$650,00</p>
+        <p class="parcelamento">5x de R$130,00 sem juros</p>
+        <button class="btn-comprar" onclick="adicionarAoCarrinho('Conjunto Nike Cinza', 650.00)">Comprar</button>
+      </div>
+
+      
+ <script>
+        let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    
+        function adicionarAoCarrinho(nome, preco) {
+          carrinho.push({ nome, preco });
+          localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    
+          document.querySelector('.contador-carrinho').textContent = carrinho.length;
+          alert(`✅ "${nome}" adicionado ao carrinho!`);
+        }
+    
+        // Atualiza o contador ao carregar a página
+        window.addEventListener('DOMContentLoaded', () => {
+          const carrinhoSalvo = JSON.parse(localStorage.getItem('carrinho')) || [];
+          document.querySelector('.contador-carrinho').textContent = carrinhoSalvo.length;
+        });
+      </script>
+  
+</html>
