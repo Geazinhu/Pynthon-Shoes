@@ -23,6 +23,6 @@ Julia Lima Monteiro                | 425106386 | Responsavel por gravar o vídeo
 Raissa Vitória Melo Correia        | 425103333 | Responsavel pelo relatorio escrito do projeto  | <https://github.com/raissa1509>
 Samuel Sousa David                 | 425101258 | Responsavel pelo GitHub                        | <https://github.com/SamuelSD100>
 
-## **Estrutura de pastas** 📁<h2>
+## **Estrutura de arquivos** 📁<h2>
 
-A estrutura de organização escolhida para a estrutara da pasta foi baseada integralmente na sugestão previamente apresentada e recomendada pelo professor, visando garantir clareza, coerência e alinhamento com os critérios estabelecidos para o projeto.
+A estrutura de organização escolhida para a estrutara da pasta foi baseada integralmente na sugestão previamente apresentada e recomendada pelo professor, visando garantir clareza, coerência e alinhamento com os critérios estabelecidos para o projeto. 
