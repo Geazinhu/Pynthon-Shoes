@@ -27,32 +27,26 @@ Samuel Sousa David                 | 425101258 | Responsavel pelo GitHub        
 
 A estrutura de organização escolhida para a estrutara da pasta foi baseada integralmente na sugestão previamente apresentada e recomendada pelo professor, visando garantir clareza, coerência e alinhamento com os critérios estabelecidos para o projeto.
 
-css
+HTML
+├── **HTML**<br> 
+├── index.html (pagina pricipal) <br>
+├── calcados.html <br>
+├── conjunto.html <br>
+├── sobrenos.html <br>
+├── perguntas.html <br>
+├── checkout.html <br>
+├── acessorios.html <br>
+├── carrinho.html <br>
+├── finalizar.html <br>
+├── indexlog.html <br>
+└── readme.md <br>
+
+CSS
 ├── **CSS** <br>
 │   ├── style.css <br>
 │   ├── responsivo.css <br>
-Javascript
-├── **Js/** <br>
-│   ├── api.js <br>
-│   ├── menu.js <br>
-│   ├── faq.js <br>
-│   ├── detalhesProduto.js <br>
-│   ├── animacoes.js <br>
-│   └── main.js <br>
-Imagens├── **img/** <br>
+
+IMAGENS
+├── **img/** <br>
 │   ├── logo.png <br>
 │   └── ... <br>
-HTML
-├── **HTML**<br>
-├── index.html (pagina pricipal) <br>
-├── produtos.html <br>
-├── galeria.html <br>
-├── equipe.html <br>
-├── sobre.html <br>
-├── contato.html <br>
-├── faq.html <br>
-├── detalhes-produto.html <br>
-├── servicos.html <br>
-├── area-clientes.html <br>
-└── README.md <br>
-
