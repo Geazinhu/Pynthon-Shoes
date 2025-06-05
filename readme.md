@@ -1,5 +1,4 @@
 # **Python Shoes** 👟 <h1> 
-> Status : Em desenvolvimento ⚠️
 
 ## **Quem somos**?🤷‍♂️ <h2>
 Somos uma loja 100% digital, feita pra quem gosta de praticidade, agilidade e calçados importados E claro: com um atendimento que te trata como deve ser — com atenção, respeito e agilidade.<br>
@@ -25,7 +24,7 @@ Samuel Sousa David                 | 425101258 | Responsavel pelo GitHub        
 
 ## **Estrutura de Arquivos** 📁<h2>
 
-A estrutura de organização escolhida para a estrutara da pasta foi baseada integralmente na sugestão previamente apresentada e recomendada pelo professor, visando garantir clareza, coerência e alinhamento com os critérios estabelecidos para o projeto.
+A estrutura de organização escolhida para a estrutara da pasta foi baseada integralmente na sugestão previamente apresentada e recomendada pelo professor.
 
 HTML
 ├── **HTML**<br> 
@@ -43,10 +42,13 @@ HTML
 
 CSS
 ├── **CSS** <br>
-│   ├── style.css <br>
-│   ├── responsivo.css <br>
-
-IMAGENS
-├── **img/** <br>
-│   ├── logo.png <br>
-│   └── ... <br>
+├── index.css <br>
+├── index3.css <br>
+├── index4.css <br>
+├── calcados.css <br>
+├── conjuto.css <br>
+├── perguntas.css <br>
+├── acessorio.css <br>
+├── carrinho.css <br>
+├── finalizar.css <br>
+└── styleslog.css <br>
